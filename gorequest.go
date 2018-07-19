@@ -274,6 +274,7 @@ func (s *SuperAgent) Set(param string, value string) *SuperAgent {
 //      AppendHeader("Accept", "application/json").
 //      AppendHeader("Accept", "text/plain").
 //      End()
+
 func (s *SuperAgent) AppendHeader(param string, value string) *SuperAgent {
 	s.Header.Add(param, value)
 	return s
